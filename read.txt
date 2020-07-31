@@ -1,0 +1,10 @@
+使用自己数据集：
+1.修改class_name_to_index.json
+2.修改conf.json文件img_file_path等同于voc2012中的JPEGImages文件夹，txt_file_path等同于voc2012中的\ImageSets\Main文件夹其中只需要train.txt和val.txt，xml_file_path等同于voc2012中的Annotations文件夹
+训练：
+1.配置文件conf.json，可以修改学习率，epoch，batch_size，以及多尺度训练（这里由于显存不够，只使用了少数几个尺度，没有论文中320~608这么多尺度）
+2.kmeans.py聚类（这里使用了kmeans++，可以更好的选择初始聚类中心）
+3.train.py训练
+预测：
+1.配置文件conf.json，测试图片路径test_img_path，测试时使用的尺寸predict_model_input_img_size等
+2.predict.py
