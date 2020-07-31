@@ -11,4 +11,4 @@ After reading the YOLOV2 paper, try to use pytorch to build a YOLOV2 model
 2.Run predict.py.
 ## predict result  
 In order to test the model, I found some data on the Internet, the link is https://github.com/cosmicad/dataset, the prediction results are as follows：  
-
+![pic1](https://github.com/1991yuyang/YOLOV2/blob/master/predict_result/BloodImage_00197.jpg?raw=true)
